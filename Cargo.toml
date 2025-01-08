@@ -1,0 +1,14 @@
+[package]
+name = "rsim_macro"
+version = "1.0.0-beta.1"
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "=1.0.37"
+syn = { version = "=2.0.90", features = ["full", "extra-traits", "parsing"] }
+serde = { version = "=1.0.216", features = ["derive"] }
+serde_json = { version = "=1.0.133" }
+proc-macro2 = "=1.0.92"
